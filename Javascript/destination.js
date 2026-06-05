@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const destinations = [
   {
-    image: "Images/Destination-cards/kyoto.jpg",
+    image: "Images/Destination-cards/kyoto.webp",
     location: "Kyoto",
     country: "Japan",
     description: "Kyoto is Japan's ancient imperial capital, renowned for its classical Buddhist temples, beautiful gardens, and geisha districts. The city seamlessly blends tradition with modernity, offering visitors a glimpse into Japan's rich cultural heritage.",
@@ -19,7 +19,7 @@ const destinations = [
     ]
   },
   {
-    image: "Images/Destination-cards/rome.jpg",
+    image: "Images/Destination-cards/rome.webp",
     location: "Rome",
     country: "Italy",
     description: "Rome, the Eternal City, is a sprawling cosmopolitan city with nearly 3,000 years of globally influential art, architecture, and culture. From the Colosseum to the Vatican, Rome is an open-air museum packed with ancient wonders.",
@@ -32,7 +32,7 @@ const destinations = [
     ]
   },
   {
-    image: "Images/Destination-cards/toronto.jpg",
+    image: "Images/Destination-cards/toronto.webp",
     location: "Toronto",
     country: "Canada",
     description: "Toronto is Canada's largest city and a vibrant multicultural metropolis on the shores of Lake Ontario. Known for its diverse neighborhoods, world-class dining, and iconic skyline featuring the CN Tower, Toronto offers something for every traveler.",
@@ -45,7 +45,7 @@ const destinations = [
     ]
   },
   {
-    image: "Images/Destination-cards/machupicchu.jpg",
+    image: "Images/Destination-cards/machupicchu.webp",
     location: "Machu Picchu",
     country: "Peru",
     description: "Machu Picchu is a 15th-century Inca citadel perched high in the Andes Mountains of Peru. One of the world's most recognizable archaeological sites, it offers breathtaking mountain scenery and a fascinating window into the Inca civilization.",
@@ -58,7 +58,7 @@ const destinations = [
     ]
   },
   {
-    image: "Images/Destination-cards/giza.jpg",
+    image: "Images/Destination-cards/giza.webp",
     location: "Giza",
     country: "Egypt",
     description: "Giza is home to some of the most iconic ancient monuments in the world, including the Great Pyramids and the Sphinx. Located just outside Cairo, this ancient site offers a stunning glimpse into the engineering genius and culture of ancient Egypt.",
@@ -71,7 +71,7 @@ const destinations = [
     ]
   },
   {
-    image: "Images/Destination-cards/sydney.jpg",
+    image: "Images/Destination-cards/sydney.webp",
     location: "Sydney",
     country: "Australia",
     description: "Sydney is Australia's largest and most glamorous city, famous for its stunning harbour, golden beaches, and iconic landmarks. From the Sydney Opera House to Bondi Beach, the city offers a perfect blend of urban sophistication and outdoor adventure.",

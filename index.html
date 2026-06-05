@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelNest</title>
+
+    
+    <meta name="description" content="Explore beautiful destinations around the world with TravelNest. Travel guides, budget planning, and trip inspiration.">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://yourdomain.com/index.html">
+
+
+    <meta property="og:title" content="TravelNest – Explore the World">
+    <meta property="og:description" content="Discover stunning destinations, plan your budget, and generate your dream trip.">
+    <meta property="og:image" content="Images/og-preview.jpg">
+    <meta property="og:type" content="website">
+
+
+    <link rel="preload" as="image" href="Images/destination%20highlights/bora.webp">
+
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Images/favicon/Travelnest_favicon.png" type="image/png">
 </head>
 <body>
     
     <header>
-        <nav class="nav-bar">
-            <a href="#" class="logo">Travel<span class="head">Nest</span><img src="Images/vecteezy_simple-airplane-decal_18127308.png" alt=""></a>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="#" class="logo" aria-label="TravelNest home">Travel<span class="head">Nest</span><img src="Images/vecteezy_simple-airplane-decal_18127308.png" alt="" width="24" height="24"></a>
             <ul class="nav-menu">
                 <li class="nav-items"><a href="index.html" class="nav-links">Home</a></li>
                 <li class="nav-items"><a href="Destinations.html" class="nav-links">Destinations</a></li>
@@ -20,7 +35,7 @@
                 <li class="nav-items"><a href="Travel-mood.html" class="nav-links">Travel Mood</a></li>
                 <li class="nav-items"><a href="feedback.html" class="nav-links">FeedBack</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" role="button" aria-label="Open navigation menu" aria-expanded="false" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,7 +50,7 @@
                 <div class="text">
                     <h1 id="main-header">Loading...</h1>
                     <span id="line"></span>
-                    <p id="location"><img class="loc-icon" src="Images/icons8-location-50.png" alt="Location Icon"></p>
+                    <p id="location"><img class="loc-icon" src="Images/icons8-location-50.png" alt="Location Icon" width="20" height="20"></p>
                     <br>
                     <p id="destination-details"></p>
                 </div>
@@ -55,7 +70,7 @@
             <div class="boxes">
                 <div class="box1">
                     <p class="det-info">
-                        <span class="det-emoji"><img class= "svg" src="svg/cherryblossom-svgrepo-com.svg" alt="flower"></span><br>
+                        <span class="det-emoji"><img class= "svg" src="svg/cherryblossom-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true"></span><br>
                         <span class="det-topic">BEST TIME TO VISIT</span>
                     </p>
                     <p class="det-content" id="info-best-time"></p>
@@ -63,7 +78,7 @@
 
                 <div class="box2">
                     <p class="det-info">
-                        <span class="det-emoji"><img class= "svg" src="svg/money-svgrepo-com.svg" alt="money"></span>
+                        <span class="det-emoji"><img class= "svg" src="svg/money-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true"></span>
                         <span class="det-topic">CURRENCY</span>
                     </p>
                     <p class="det-content" id="info-currency"></p>
@@ -71,7 +86,7 @@
 
                 <div class="box3">
                     <p class="det-info">
-                        <span class="det-emoji"><img class= "svg" src="svg/user-speak-rounded-svgrepo-com.svg" alt=""></span>
+                        <span class="det-emoji"><img class= "svg" src="svg/user-speak-rounded-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true"></span>
                         <span class="det-topic">LANGUAGE</span>
                     </p>
                     <p class="det-content" id="info-language"></p>
@@ -79,7 +94,7 @@
 
                 <div class="box4">
                     <p class="det-info">
-                        <span class="det-emoji"><img class= "svg" src="svg/climate-forecast-season-svgrepo-com.svg" alt="climate"></span>
+                        <span class="det-emoji"><img class= "svg" src="svg/climate-forecast-season-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true"></span>
                         <span class="det-topic">CLIMATE</span>
                     </p>
                     <p class="det-content" id="info-climate"></p>
@@ -90,9 +105,9 @@
         <div class="bar-vertical"></div>
 
         <div class="destination-image">
-            <img src="Images/error.png" alt="Destination Image" id="Higlight-img1" class="image-binder">
-            <img src="Images/error.png" alt="Destination Image" id="Higlight-img2" class="image-binder">
-            <img src="Images/error.png" alt="Destination Image" id="Higlight-img3" class="image-binder">
+            <img src="Images/error.png" alt="Destination highlight 1" id="Higlight-img1" class="image-binder" loading="lazy" width="400" height="300">
+            <img src="Images/error.png" alt="Destination highlight 2" id="Higlight-img2" class="image-binder" loading="lazy" width="400" height="300">
+            <img src="Images/error.png" alt="Destination highlight 3" id="Higlight-img3" class="image-binder" loading="lazy" width="400" height="300">
         </div>
     </div>
     <div class="bar-section"></div>
@@ -100,7 +115,7 @@
         <div class = "footer-container">
             <div class = "footer-details">
                  
-                <a href="#" class="logo">Travel<span class="head">Nest</span><img src="Images/vecteezy_simple-airplane-decal_18127308.png" alt=""></a>
+                <a href="#" class="logo" aria-label="TravelNest home">Travel<span class="head">Nest</span><img src="Images/vecteezy_simple-airplane-decal_18127308.png" alt="" width="24" height="24"></a>
                 <span class="location-divider"></span>
                 <p id="footer-intro-web">TravelNest is a travel website that helps users explore beautiful destinations around the world. It offers travel guides, destination details, and helpful tips to make trip planning easier. With a clean and modern design, TravelNest inspires travelers to discover their next adventure.</p><br><br>
                 <div class="container-links">
@@ -149,6 +164,6 @@
     </div>
     
 
-    <script src="Javascript/script.js"></script>
+    <script src="Javascript/script.js" defer></script>
 </body>
 </html>

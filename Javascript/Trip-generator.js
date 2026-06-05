@@ -27,10 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-  const destinations = [
+const destinations = [
     {
-      image: "Images/Destination-cards/kyoto.jpg",
+      image: "Images/Destination-cards/kyoto.webp",
       location: "Kyoto",
       country: "Japan",
       description: "A timeless city of ancient temples, bamboo groves, and geisha culture — where every season paints a new masterpiece.",
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       budget: "Medium"
     },
     {
-      image: "Images/Destination-cards/giza.jpg",
+      image: "Images/Destination-cards/giza.webp",
       location: "Giza",
       country: "Egypt",
       description: "Home to one of humanity's greatest wonders, Giza is a window into an ancient civilisation that still leaves the world speechless.",
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       budget: "Low"
     },
     {
-      image: "Images/Destination-cards/sydney.jpg",
+      image: "Images/Destination-cards/sydney.webp",
       location: "Sydney",
       country: "Australia",
       description: "A dazzling harbour city where golden beaches, iconic landmarks, and a buzzing food scene collide in perfect harmony.",
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       budget: "High"
     },
     {
-      image: "Images/Destination-cards/machupicchu.jpg",
+      image: "Images/Destination-cards/machupicchu.webp",
       location: "Machu Picchu",
       country: "Peru",
       description: "A lost Incan citadel perched high in the Andes, shrouded in mist and mystery — the ultimate adventure for the soul.",
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
       budget: "Medium"
     },
     {
-      image: "Images/Destination-cards/toronto.jpg",
+      image: "Images/Destination-cards/toronto.webp",
       location: "Toronto",
       country: "Canada",
       description: "A vibrant multicultural metropolis bursting with world-class dining, diverse neighbourhoods, and a skyline that never gets old.",
@@ -70,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       budget: "High"
     },
     {
-      image: "Images/Destination-cards/rome.jpg",
+      image: "Images/Destination-cards/rome.webp",
       location: "Rome",
       country: "Italy",
       description: "The Eternal City — where ancient ruins, Renaissance art, and the world's best pasta exist on the very same cobblestone street.",
