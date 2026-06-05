@@ -52,7 +52,7 @@ calculate_btn.addEventListener("click", () => {
     let budgetCategory;
 
 if (daily < 50) {
-    budgetCategory = "Budget";
+    budgetCategory = "low";
 } else if (daily < 150) {
     budgetCategory = "Mid-range";
 } else {

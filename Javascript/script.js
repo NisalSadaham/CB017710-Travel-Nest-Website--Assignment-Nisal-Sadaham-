@@ -192,4 +192,57 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     daily_updating_destinations();
+
+
+// ===== NEWSLETTER SUBMISSION =====
+const newsletterForm = document.getElementById("saveNewsForm");
+
+newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault(); 
+
+    const emailinput = document.getElementById("newsletter-email");
+    const error = document.getElementById("newsletter-error");
+    const success = document.getElementById("newsletter-success");
+
+    const email = emailinput.value.trim();
+
+    error.classList.remove("visible");
+    success.classList.remove("visible");
+
+    if (!emailinput.checkValidity()) {
+        error.textContent = "Please enter a valid email.";
+        error.classList.add("visible");
+        return;
+    }
+
+    const existing = localStorage.getItem("news-letter");
+
+    if (existing === email) {
+        error.textContent = "You are already subscribed!";
+        error.classList.add("visible");
+        return;
+    }
+
+    if (email !== "") {
+        localStorage.setItem("news-letter", email);
+
+        success.textContent = "You have successfully subscribed!";
+        success.classList.add("visible");
+
+        emailinput.value = "";
+        
+        // Optional: Also clear the name field if you want
+        document.getElementById("field-name").value = "";
+
+        setTimeout(() => {
+            success.classList.remove("visible");
+            error.classList.remove("visible");
+        }, 4000);
+
+    } else {
+        error.textContent = "Please enter a valid email.";
+        error.classList.add("visible");
+    }
+});
+    
 });
