@@ -221,7 +221,7 @@ body {
     width: 100%; 
 }
 
-.text h2 {
+.text h1 {
     font-size: 2rem;
     color: var(--color-cream);
     margin-bottom: 8px;
@@ -253,7 +253,7 @@ body {
     align-items: center;
 }
 
-#loc-icon {
+.loc-icon {
     height: 16px;
     width: auto;
     margin-right: 5px;
@@ -387,7 +387,7 @@ body {
     animation: fadeup 0.4s ease;
 }
 
-#location-divider {
+.location-divider {
     display: block;
     width: 70%;
     height: 3px;
@@ -513,7 +513,7 @@ body {
     letter-spacing: 0.05em;
 }
 
-#footer-line {
+.footer-line {
     display: block;
     height: 2px;
     width: 80%;
@@ -542,7 +542,7 @@ body {
     color: var(--color-gold-light);
 }
 
-#contact {
+.contact {
     font-family: Poppins;
     font-size: 0.85rem;
     color: var(--color-grey-light);
@@ -2160,7 +2160,7 @@ body {
     grid-template-columns: 1fr;}
 
     .destination-cards {
-        grid-template-columns:(2,1fr); 
+        grid-template-columns:1fr 1fr; 
         
     }
     .destination-card {

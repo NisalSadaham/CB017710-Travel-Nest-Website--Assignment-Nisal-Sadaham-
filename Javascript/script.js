@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showSlide() {
         background.style.backgroundImage = `url("${slides[index].image}")`;
         mainHeader.textContent = slides[index].text;
-        locationInfo.innerHTML = `<img id="loc-icon" src="Images/icons8-location-50.png" alt="Location Icon"> ${slides[index].location}`;
+        locationInfo.innerHTML = `<img class ="loc-icon" src="Images/icons8-location-50.png" alt="Location Icon"> ${slides[index].location}`;
         destinationDetails.textContent = slides[index].details;
     }
 
