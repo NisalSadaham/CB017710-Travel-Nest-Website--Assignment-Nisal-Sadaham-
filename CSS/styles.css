@@ -41,18 +41,21 @@ body {
 
 /* ===== FONTS ===== */
 @font-face {
-    font-family: 'Playfair_Display';
-    src: url("../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+    font-family: 'Poppins';
+    src: url('../Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+    font-family: 'Playfair Display';
+    src: url('../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Lobster';
-    src: url("../Fonts/Lobster/Lobster-Regular.ttf");
+    src: url('../Fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 /* ===== NAVBAR ===== */
