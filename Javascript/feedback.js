@@ -32,50 +32,40 @@ const send_msg = document.getElementById("send-msg")
 
 send_msg.addEventListener("click",savemsg)
 
-
-
-// == feedback msg  ==/
+// feedback msg//
 function savemsg() {
-    const name = document.getElementById("name").value;
+    const name = document.getElementById("name");
     const emailInput = document.getElementById("email");
-    const email = emailInput.value;
-    const input_area = document.getElementById("input-area").value;
+    const input_area = document.getElementById("input-area");
     const result_submission = document.getElementById("result-submission");
 
-    if (name === '' || input_area === '') {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.value === '' || input_area.value === '' || emailInput.value === '') {
         result_submission.textContent = "Please Enter Valid Information";
     }
-    else if (emailInput.checkValidity()) {
-
+    else if (!emailRegex.test(emailInput.value)) {
+        result_submission.textContent = "Invalid Email!";
+    }
+    else {
         const message_data = {
-            name: name,
-            email: email,
-            message: input_area
+            name: name.value,
+            email: emailInput.value,
+            message: input_area.value
         };
 
         const messages = JSON.parse(localStorage.getItem("messages")) || [];
-
         messages.push(message_data);
-
         localStorage.setItem("messages", JSON.stringify(messages));
 
+        result_submission.textContent = "Your Message Was Saved Successfully!";
 
-        result_submission.textContent =
-            "Your Message Was Saved Successfully!";
-
-        setInterval(clear,3000)
-
-        function clear(){
-
-        name.value = ''
-        email.value = ''
-        input_area.value = ''
-        result_submission.textContent = ''
-    }
-
-    }
-    else {
-        result_submission.textContent = "Invalid Email! or invalid field data";
+        setTimeout(function () {
+            name.value = '';
+            emailInput.value = '';
+            input_area.value = '';
+            result_submission.textContent = '';
+        }, 3000);
     }
 }
 const questions = document.querySelectorAll(".faq-question");
