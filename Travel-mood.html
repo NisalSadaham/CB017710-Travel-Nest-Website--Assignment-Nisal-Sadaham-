@@ -6,6 +6,8 @@
     <title>TravelNest</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Images/favicon/Travelnest_favicon.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d6efd">
 </head>
 <body class="mood">
     <header>
@@ -208,5 +210,12 @@
        <p>© 2026 TravelNest.All Rights Reserved.</p>
     </div>
 <script src="Javascript/mood.js" defer></script>
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js");
+    });
+}
+</script>
 </body>
 </html>
