@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function nextSlide() {
         index = (index + 1) % slides.length;
-        console.log(index)
+        // console.log(index)
         showSlide();
     }
 
